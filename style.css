@@ -1,0 +1,78 @@
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  margin: 0;
+  font-size: 15px;
+  background-color: #e3f4fc;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 890px;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  background-color: #fff;
+}
+
+.right {
+  background-color: #133040;
+  border-radius: 0 30px 30px 80px;
+  color: hsl(203, 41%, 72%);
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px 80px 30px;
+}
+
+.right h2 {
+  color: hsl(202, 86%, 94%);
+  margin-bottom: 0;
+}
+
+.right p {
+  line-height: 1.6;
+}
+
+.amount-wrapper {
+  background-color: #0e2431;
+  border-radius: 5px;
+  border-top: 4px solid hsl(61, 70%, 52%);
+  margin-top: 15px;
+  padding: 5px 20px;
+}
+
+.amount-wrapper h3 {
+  font-size: 25px;
+  color: hsl(61, 70%, 52%);
+  margin: 0 0 15px 0;
+}
+
+.amount-wrapper hr {
+  border: 1px solid hsla(203, 41%, 72%, 0.411);
+}
+
+.amount-wrapper h4 {
+  color: hsl(202, 86%, 94%);
+  margin-top: 0;
+}
+
+.amount-wrapper .total {
+  margin-bottom: 10px;
+}
