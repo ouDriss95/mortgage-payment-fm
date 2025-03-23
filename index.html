@@ -24,22 +24,83 @@
   <body>
     <div class="container">
       <div class="left">
-        <div class="haeding">
-          <h1>Mortgage Calculator</h1>
-          <a href="">Clear All</a>
-        </div>
-        <form>
-          <div class="inputs-wrapper">
-            <input type="text" placeholder="" class="input-field" />
-            <div class="">
-              <input type="" placeholder="" class="input-field" />
-            </div>
+        <div class="mortgage-calculator">
+          <div class="calculator-header">
+            <h2>Mortgage Calculator</h2>
+            <a href="#" class="clear-all">Clear All</a>
           </div>
 
-          <div class="submit-wrapper">
-            <button type="submit" class="">Calculate Repayments</button>
-          </div>
-        </form>
+          <form>
+            <div class="form-group">
+              <label for="mortgage-amount">Mortgage Amount</label>
+              <div class="input-group">
+                <span>£</span>
+                <input
+                  type="text"
+                  id="mortgage-amount"
+                  name="mortgage-amount"
+                  value="300,000"
+                />
+              </div>
+            </div>
+
+            <div class="rate-wrapper">
+              <div class="form-group">
+                <label for="mortgage-term">Mortgage Term</label>
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="mortgage-term"
+                    name="mortgage-term"
+                    value="25"
+                  />
+                  <span>years</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="interest-rate">Interest Rate</label>
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="interest-rate"
+                    name="interest-rate"
+                    step="0.01"
+                    value="5.25"
+                  />
+                  <span>%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mortgage-type">
+              <label>Mortgage Type</label>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="mortgage-type"
+                    value="repayment"
+                    checked
+                  />
+                  Repayment
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="mortgage-type"
+                    value="interest-only"
+                  />
+                  Interest Only
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="calculate-btn">
+              Calculate Repayments
+            </button>
+          </form>
+        </div>
       </div>
       <div class="right">
         <h2>Your results</h2>
@@ -57,21 +118,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Mortgage Calculator Clear All Mortgage Amount Mortgage Term Interest Rate
-    Mortgage Type Repayment Interest Only Calculate Repayments -->
-
-    <!-- Empty results start -->
-
-    <!-- Results shown here Complete the form and click “calculate repayments” to see
-    what your monthly repayments would be. -->
-
-    <!-- Empty results end -->
-
-    <!-- Completed results start -->
-
-    <!--    -->
-
-    <!-- Completed results end -->
   </body>
 </html>
