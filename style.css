@@ -122,7 +122,7 @@ body {
 }
 
 .radio-group label:has(> input:checked) {
-  background-color: aqua;
+  background-color: #fafae0;
 }
 
 .radio-group input[type="radio"] {
